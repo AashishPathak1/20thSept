@@ -1,0 +1,34 @@
+
+    <!-- <h1>Welcome to Our Page...</h1> </nav>-->
+<!-- <form action="connection.js" method="post">
+        <label for="rollNo">rollNo</label>
+        <input type="text" id="rollNo" name="rollNo">
+        <label for="firstName">firstName</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="rollNo">rollNo</label>
+        <input type="text" id="rollNo" name="rollNo">
+        <label for="rollNo">rollNo</label>
+        <input type="text" id="rollNo" name="rollNo">
+        <label for="rollNo">rollNo</label>
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- <form action="coonection.js" method="post">
+            <div class="form-group">
+                <label for="rollNo">Roll No:</label>
+                <input type="text" class="form-control" id="rollNo" name="rollNo" required>
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="firstName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lasttName">
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName">
+            </div>
+        </form> -->
