@@ -5,13 +5,25 @@ async function addStudent(req, res) {
     console.log(req.body);
     let student = new Student(req.body);
     await student.save();
-    res.end("Data is saved successfully !!!");
+    // res.end("Data is saved successfully !!!");
+    res.render("studentinsert");
   } catch (err) {
     console.error("Error saving data:", err);
-    // res.status(500).send("Error saving data");
+  }
+}
+
+async function getStudents(req, res) {
+  try {
+    // console.log(req.body);
+    let students = await Student.find({});
+    // res.send(students);
+    res.render("studentlist", { students: students });
+  } catch (err) {
+    console.error("Something went wrong!!", err);
   }
 }
 
 module.exports = {
-  addStudent
+  addStudent,
+  getStudents
 };
