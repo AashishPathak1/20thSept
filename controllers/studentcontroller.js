@@ -23,7 +23,21 @@ async function getStudents(req, res) {
   }
 }
 
+async function getStudentForEdit(req, res) {
+  try {
+    // res.render("studentedit", { student: student });
+    let id = req.params.id;
+    console.log("Student Id: " + id);
+    let student = await Student.findOne({ _id: id });
+    console.log("Student: " + student);
+    // res.send(student);
+    res.render("studentforupdate", { student: student });
+  } catch (err) {
+    console.error("Something went wrong!!", err);
+  }
+}
 module.exports = {
   addStudent,
-  getStudents
+  getStudents,
+  getStudentForEdit
 };

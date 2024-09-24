@@ -12,6 +12,7 @@
                         <th>Father Name</th>
                         <th>Aadhar-Card Number</th>
                         <th>Mobile Number</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,6 +36,10 @@
                             <td>
                                 <%= student.mobileNo %>
                             </td>
+                            <td>
+                                <a href="/edit/student/page/<%= student._id %>" class="btn btn-primary w-75">Edit</a>
+                            </td>
+
                         </tr>
                         <% }) %>
                 </tbody>
